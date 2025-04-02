@@ -1,11 +1,6 @@
-.main-container{
-  display: grid;
-  grid-template-columns: repeat(4,18%);
-  grid-template-rows: 100px 530px 250px 210px;
-  justify-content: center;
-  gap: 20px
-}
-.main-container >  *{
-  background-color: cadetblue;
-  
+
+
+.flex-container{
+  flex-direction: row;
+  flex-wrap: wrap;
 }
