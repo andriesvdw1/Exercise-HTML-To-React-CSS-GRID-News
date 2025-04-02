@@ -46,7 +46,18 @@ function Article() {
         },
       ];
   return (
-    <div>Article</div>
+
+    <article>
+        {articles.filter((article) => (
+            if(article.category === 'Sports'){
+                <h1>article.heading</h1>
+                <span> article.category</span>
+                <span>active:`${article.active}`</span>
+                <p>`${article.text}`</p>
+
+            }
+        ))}
+    </article>
   )
 }
 
