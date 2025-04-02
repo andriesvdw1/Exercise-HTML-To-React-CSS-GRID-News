@@ -1,5 +1,6 @@
 # HTML To React Layout Exercise  
 ## Approach used: Styles applied to the Article component: 
+```
 section{
     display: flex;
     justify-content: space-evenly;
@@ -12,8 +13,26 @@ article{
     padding-left: 10px;
     padding-right: 10px;
 }
-## JavaScript Array Methods used:
-![image](https://github.com/user-attachments/assets/5525e6dd-3029-4fb0-a11f-93d6afc8dbe6)
+```
+## JavaScript Array Methods Used: Filter and Map.
+```
+return (
+    <>
+    <h2>Technology</h2>
+      <section>
+        
+        {articles
+          .filter((article) => article.category === "Technology")
+          .map((article) => (
+            <article key={article.id}>
+              <h1>{article.heading}</h1>
+              <span>Category: {article.category}</span>
+              <span>Active: {article.active}</span>
+              <p>{article.text}</p>
+            </article>
+          ))}
+      </section>
+```
 
 # Output:
 ![image](https://github.com/user-attachments/assets/5d94f243-10ca-4ed2-aab1-e036e3818465)  
