@@ -1,3 +1,12 @@
 section{
     display: flex;
+    justify-content: space-evenly;
+}
+
+article{
+    width: 22%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
